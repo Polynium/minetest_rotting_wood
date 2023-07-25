@@ -9,13 +9,16 @@ minetest.register_node("rotting_wood:rotten_tree", {
 		"rotting_wood_rotten_tree.png",
 		"rotting_wood_rotten_tree.png"
 	},
-	sounds = default.node_sound_gravel_defaults()
+	sounds = default.node_sound_gravel_defaults(),
+	on_place = minetest.rotate_node,
+	paramtype2 = "facedir"
 })
 
 minetest.register_node("rotting_wood:rotten_wood", {
 	description = "Rotten Apple Wood Planks",
 	tiles = {"rotting_wood_rotten_wood.png"},
-	sounds = default.node_sound_gravel_defaults()
+	sounds = default.node_sound_gravel_defaults(),
+	paramtype2 = "facedir"
 })
 
 minetest.register_node("rotting_wood:rotten_aspen_tree", {
@@ -29,14 +32,18 @@ minetest.register_node("rotting_wood:rotten_aspen_tree", {
 		"rotting_wood_rotten_aspen_tree.png",
 		"rotting_wood_rotten_aspen_tree.png"
 	},
-	sounds = default.node_sound_gravel_defaults()
+	sounds = default.node_sound_gravel_defaults(),
+	on_place = minetest.rotate_node,
+	paramtype2 = "facedir"
 })
 
 minetest.register_node("rotting_wood:rotten_aspen_wood", {
 	description = "Rotten Aspen Wood Planks",
 	groups = {crumbly = 1, choppy = 1},
 	tiles = {"rotting_wood_rotten_aspen_wood.png"},
-	sounds = default.node_sound_gravel_defaults()
+	sounds = default.node_sound_gravel_defaults(),
+	on_place = minetest.rotate_node,
+	paramtype2 = "facedir"
 })
 
 minetest.register_node("rotting_wood:rotten_pine_tree", {
@@ -50,14 +57,18 @@ minetest.register_node("rotting_wood:rotten_pine_tree", {
 		"rotting_wood_rotten_pine_tree.png",
 		"rotting_wood_rotten_pine_tree.png"
 	},
-	sounds = default.node_sound_gravel_defaults()
+	sounds = default.node_sound_gravel_defaults(),
+	on_place = minetest.rotate_node,
+	paramtype2 = "facedir"
 })
 
 minetest.register_node("rotting_wood:rotten_pine_wood", {
 	description = "Rotten Pine Wood Planks",
 	groups = {crumbly = 1, choppy = 1},
 	tiles = {"rotting_wood_rotten_pine_wood.png"},
-	sounds = default.node_sound_gravel_defaults()
+	sounds = default.node_sound_gravel_defaults(),
+	on_place = minetest.rotate_node,
+	paramtype2 = "facedir"
 })
 
 minetest.register_node("rotting_wood:rotten_acacia_tree", {
@@ -71,14 +82,18 @@ minetest.register_node("rotting_wood:rotten_acacia_tree", {
 		"rotting_wood_rotten_acacia_tree.png",
 		"rotting_wood_rotten_acacia_tree.png"
 	},
-	sounds = default.node_sound_gravel_defaults()
+	sounds = default.node_sound_gravel_defaults(),
+	on_place = minetest.rotate_node,
+	paramtype2 = "facedir"
 })
 
 minetest.register_node("rotting_wood:rotten_acacia_wood", {
 	description = "Rotten Acacia Wood Planks",
 	groups = {crumbly = 1, choppy = 1},
 	tiles = {"rotting_wood_rotten_acacia_wood.png"},
-	sounds = default.node_sound_gravel_defaults()
+	sounds = default.node_sound_gravel_defaults(),
+	on_place = minetest.rotate_node,
+	paramtype2 = "facedir"
 })
 
 minetest.register_node("rotting_wood:rotten_jungletree", {
@@ -92,12 +107,16 @@ minetest.register_node("rotting_wood:rotten_jungletree", {
 		"rotting_wood_rotten_jungletree.png",
 		"rotting_wood_rotten_jungletree.png"
 	},
-	sounds = default.node_sound_gravel_defaults()
+	sounds = default.node_sound_gravel_defaults(),
+	on_place = minetest.rotate_node,
+	paramtype2 = "facedir"
 })
 
 minetest.register_node("rotting_wood:rotten_junglewood", {
 	description = "Rotten Junglewood Planks",
 	groups = {crumbly = 1, choppy = 1},
 	tiles = {"rotting_wood_rotten_junglewood.png"},
-	sounds = default.node_sound_gravel_defaults()
+	sounds = default.node_sound_gravel_defaults(),
+	on_place = minetest.rotate_node,
+	paramtype2 = "facedir"
 })
