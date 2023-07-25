@@ -18,8 +18,9 @@ local function abm_action(pos)
 	local rotting = meta:get_int("rotting")
 	rotting = rotting + 5
 	if rotting >= 300 then
-		rotten_node = conversion_table[minetest.get_node(pos).name]
-		minetest.set_node(pos, {name = rotten_node})
+		local node = minetest.get_node(pos)
+		local rotten_node = conversion_table[node.name]
+		minetest.set_node(pos, {name = rotten_node, param2 = node.param2})
 	else
 		meta:set_int("rotting", rotting)
 	end
@@ -64,7 +65,9 @@ minetest.register_abm({
 	},
 	neighbors = {
 		"default:water_source",
-		"default:river_water_source"
+		"default:river_water_source",
+		"default:water_flowing",
+		"default:river_water_flowing"
 	},
 	interval = 5,
 	chance = 1,
